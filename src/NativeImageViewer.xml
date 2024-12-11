@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="itvisors.nativeimageviewer.NativeImageViewer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Image Viewer</name>
+    <description>Mendix native image viewer</description>
+    <studioProCategory>Images, videos &amp; files</studioProCategory>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="imageSource" type="enumeration" defaultValue="mendixImage">
+                <caption>Image source</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="mendixImage">Mendix image</enumerationValue>
+                    <enumerationValue key="url">URL</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="imageToView" type="image" required="false">
+                <caption>Image to view</caption>
+                <description></description>
+            </property>
+            <property key="imageUrl" type="attribute" required="false">
+                <caption>Image URL</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="imageWidthAttr" type="attribute">
+                <caption>Image width</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="imageHeightAttr" type="attribute">
+                <caption>Image height</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="onCloseAction" type="action" required="false">
+                <caption>On close action</caption>
+                <description>Action to trigger when modal closed or image clicked.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
